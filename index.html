@@ -10,16 +10,21 @@
 
 <body>
     <header>
-        <section class="flex justify-between items-center">
-            <div>
-                <h2>LOGO</h2>
+        <section class="flex justify-between items-center w-[1140px] m-auto">
+            <div class="flex justify-center items-center p-5">
+                <img src="./images/leaf.png" class="w-[50px] h-[50px]" alt="">
+                <h2 class="font-bold text-2xl">LOGO</h2>
             </div>
-            <div class="flex  justify-between items-center">
-                <ul class="">
+            <div>
+                <ul class="flex justify-between gap-5 items-center">
                     <li>Home</li>
                     <li>Shop</li>
                     <li>About us</li>
-                    <li>Cart($56)</li>
+                    <div class="flex justify-center items-center gap-2">
+                        <img src="./images/shopping-cart.png" width="20px" height="20px" alt="">
+                        <li>Cart($56)</li>
+                    </div>
+
                 </ul>
             </div>
         </section>
@@ -35,6 +40,8 @@
         </section>
     </header>
     <main>
+        <!-- Our Plant  -->
+
         <div>
             <h2>Our Plants </h2>
             <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
@@ -42,7 +49,7 @@
 
             <section class="grid grid-cols-3 ">
                 <div class="border w-[270px] h-[377px]">
-                    <img class="w-[270] h-[300px]"  src="./images/sample-flower-image.png" alt="">
+                    <img class="w-[270] h-[300px]" src="./images/sample-flower-image.png" alt="">
                     <h2>Lily Blossom</h2>
                     <h3>20 USD</h3>
                     <button>ADD TO CARD</button>
@@ -79,21 +86,77 @@
                 </div>
             </section>
         </div>
-<div>
 
-    <div><img src="./images/flower-store.png" alt=""></div>
-    <div>
-        <h2>Flower & Plants Lover</h2>
-        <ul>
-            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-        </ul>
-    </div>
-</div>
+        <!-- Flower and Plant Lover -->
+
+        <div class="grid grid-cols-2">
+
+            <div><img src="./images/flower-store.png" alt=""></div>
+            <div>
+                <h2>Flower & Plants Lover</h2>
+                <ul class="">
+                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to exotic blooms, we offer a wide variety of fresh.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Latest deals -->
+
+        <div>
+            <h2>Latest Deals</h2>
+            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
+                blooms, we offer a wide variety of fresh.</p>
+            <div>
+                <div class="grid grid-cols-2">
+                    <div><img src="./images/deal-ana.png" alt="">
+                        <img src="./images/deal-bloom.png" alt="">
+                    </div>
+                    <div><img src="./images/deal-zabo.png" alt=""></div>
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
-    <footer></footer>
+    <footer class="grid grid-cols-4 pt-12 pb-12 w-[1120px] h-[248px] m-auto">
+        <div>
+            <img src="./images/leaf.png" class="w-[75px] h-[75px]" alt="">
+            <h2>LOGO</h2>
+            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+        </div>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+            </ul>
+
+        </div>
+        <div>
+            <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Help Center</li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 w-[216px] h-[36px] justify-end">
+            <img src="./images/icon-linkedin.png" alt="">
+            <img src="./images/icon-twitter.png" alt="">
+            <img src="./images/icon-facebook.png" alt="">
+            <img src="./images/icon-youtube.png" alt="">
+        </div>
+
+    </footer>
 </body>
 
 </html>
