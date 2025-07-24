@@ -5,6 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        .noto-serif-font {
+            font-family: "Noto Serif", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .inter-font {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
     <title>Flowers Website</title>
 </head>
 
@@ -13,26 +42,29 @@
         <section class="flex justify-between items-center w-[1140px] m-auto">
             <div class="flex justify-center items-center p-5">
                 <img src="./images/leaf.png" class="w-[50px] h-[50px]" alt="">
-                <h2 class="font-bold text-2xl">LOGO</h2>
+                <h2 class="font-bold text-2xl text-[#8987A1]">LOGO</h2>
             </div>
             <div>
                 <ul class="flex justify-between gap-5 items-center">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>About us</li>
+                    <li class="font-bold">Home</li>
+                    <li class="text-[#8987A1]">Shop</li>
+                    <li class="text-[#8987A1]">About us</li>
                     <div class="flex justify-center items-center gap-2">
                         <img src="./images/shopping-cart.png" width="20px" height="20px" alt="">
-                        <li>Cart($56)</li>
+                        <li class="text-[#8987A1]">Cart($56)</li>
                     </div>
 
                 </ul>
             </div>
         </section>
-        <section>
-            <div class="grid grid-cols-2 justify-center items-end">
+        <section class="w-[1140px] m-auto">
+            <div class="grid grid-cols-2 justify-center items-end ">
                 <div>
-                    <h2>ALWAYS FRESH <br>FLOWERS</h2>
-                    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    <h2 class="w-[570px] h-[178px] text-6xl noto-serif-font font-bold">ALWAYS<span
+                            class="text-[#E95A08]">FRESH
+                            <br>FLOWERS</span> </h2>
+                    <p class="inter-font text-xl">Indulge your senses with the beauty and fragrance of our fresh flower
+                        shop. From classic roses to
                         exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
                 </div>
                 <img src="./images/hero-flower.png" alt="">
@@ -42,47 +74,65 @@
     <main>
         <!-- Our Plant  -->
 
-        <div>
-            <h2>Our Plants </h2>
-            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
-                blooms, we offer a wide variety of fresh.</p>
+        <div class="w-[1140px] m-auto mt-[120px]">
+            <div class="flex flex-col justify-center items-center">
+                <h2 class="noto-serif-font text-5xl text-center"><span class="text-[#E95A08] ">Our</span> Plants
+                </h2>
+                <p class="inter-font text-xl w-[888px] h-[53px] mt-10 text-center justify-center">Indulge your senses
+                    with
+                    the beauty and fragrance of our
+                    fresh flower shop. From classic roses to exotic
+                    blooms, we offer a wide variety of fresh.</p>
 
-            <section class="grid grid-cols-3 ">
-                <div class="border w-[270px] h-[377px]">
-                    <img class="w-[270] h-[300px]" src="./images/sample-flower-image.png" alt="">
-                    <h2>Lily Blossom</h2>
-                    <h3>20 USD</h3>
-                    <button>ADD TO CARD</button>
-                </div>
-                <div>
+            </div>
+            <section class="grid grid-cols-4 mt-10 mb-10 ">
+                <div class=" w-[270px] h-[400px] mb-7">
                     <img src="./images/sample-flower-image.png" alt="">
-                    <h2>Lily Blossom</h2>
-                    <h3>20 USD</h3>
-                    <button>ADD TO CARD</button>
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
                 </div>
-                <div>
+                <div class=" w-[270px] h-[400px] mb-7">
                     <img src="./images/sample-flower-image.png" alt="">
-                    <h2>Lily Blossom</h2>
-                    <h3>20 USD</h3>
-                    <button>ADD TO CARD</button>
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
                 </div>
-                <div>
+                <div class=" w-[270px] h-[400px] mb-7">
                     <img src="./images/sample-flower-image.png" alt="">
-                    <h2>Lily Blossom</h2>
-                    <h3>20 USD</h3>
-                    <button>ADD TO CARD</button>
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
                 </div>
-                <div>
+                <div class=" w-[270px] h-[400px] mb-7">
                     <img src="./images/sample-flower-image.png" alt="">
-                    <h2>Lily Blossom</h2>
-                    <h3>20 USD</h3>
-                    <button>ADD TO CARD</button>
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
                 </div>
-                <div>
+                <div class=" w-[270px] h-[400px] mb-7">
                     <img src="./images/sample-flower-image.png" alt="">
-                    <h2>Lily Blossom</h2>
-                    <h3>20 USD</h3>
-                    <button>ADD TO CARD</button>
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
+                </div>
+                <div class=" w-[270px] h-[400px] mb-7">
+                    <img src="./images/sample-flower-image.png" alt="">
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
+                </div>
+                <div class=" w-[270px] h-[400px] mb-7">
+                    <img src="./images/sample-flower-image.png" alt="">
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
+                </div>
+                <div class=" w-[270px] h-[400px] mb-7">
+                    <img src="./images/sample-flower-image.png" alt="">
+                    <h2 class="text-center">Lily Blossom</h2>
+                    <h3 class="text-center">20 USD</h3>
+                    <button class="p-2 border bg-[#E95A08] text-white w-[270px]">ADD TO CARD</button>
                 </div>
             </section>
         </div>
