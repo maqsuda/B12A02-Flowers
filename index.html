@@ -32,6 +32,24 @@
             font-weight: 400;
             font-style: normal;
         }
+
+
+
+
+        .box-sizing {
+            width: 1450px;
+            height: 533px;
+            display: grid;
+            place-content: center;
+            background-image: url(./images/news-letter-bg.png);
+            background-repeat: no-repeat;
+        }
+
+        .box-content {
+            text-align: center;
+            display: inline-block;
+
+        }
     </style>
 
     <title>Flowers Website</title>
@@ -143,7 +161,7 @@
 
             <div>
                 <img class="w-[540px] h-[597px] absolute" src="./images/flower-store.png" alt="">
-                <img src="./images/trusted-badge.png" class="relative " alt="">
+                <img src="./images/trusted-badge.png" class="relative  " alt="">
             </div>
             <div class="w-[540px] h-[517px] p-10 pr-0">
                 <h2 class="noto-serif-font text-5xl font-bold w-[540px] h-[137px]">Flower & Plants <br> Lover</h2>
@@ -164,10 +182,9 @@
         <!-- Latest deals -->
 
         <div class="pt-32 w-[1140px] m-auto">
-
-
             <div class="flex flex-col justify-center items-center mb-32">
-                <h2 class="noto-serif-font text-5xl text-center"><span class="text-[#E95A08] ">Latest</span> Plants
+                <h2 class="noto-serif-font text-5xl text-center">
+                    <span class="text-[#E95A08] ">Latest</span> Plants
                 </h2>
                 <p class="inter-font text-xl w-[888px] h-[53px] mt-10 text-center justify-center ">
                     Indulge your senses
@@ -179,38 +196,60 @@
             </div>
 
 
-            <div>
-                <div class="grid grid-cols-2">
-                    <div>
-                        <div>
-                            <img src="./images/deal-ana.png" class="absolute" alt="">
-                            <div class="relative">
-                                <h2>25% Off | Jabo Plant</h2>
-                                <button class="underline">Shop Now</button>
-                            </div>
+
+            <div class="grid grid-cols-2 mb-10">
+                <div>
+                    <div class="flex mb-10">
+                        <img class="relative w-[370px] h-[201px] " src="./images/deal-ana.png" alt="">
+                        <div
+                            class="absolute flex flex-col justify-center items-center text-white text-center font-bold">
+                            <h2>25% Off | Jabo Plant</h2>
+                            <button class="underline">Shop Now</button>
                         </div>
+                    </div>
 
 
-                        <div>
-                            <img src="./images/deal-bloom.png" class="absolute" alt="">
-                             <div class="relative">
-                                <h2>25% Off | Jabo Plant</h2>
-                                <button class="underline">Shop Now</button>
+                    <div class="flex">
+                        <img class="relative w-[370px] h-[201px]" src="./images/deal-bloom.png" alt="">
+                        <div class="absolute  text-white font-bold">
+                            <h2>25% Off | Jabo Plant</h2>
+                            <button class="underline">Shop Now</button>
                         </div>
 
                     </div>
-                    <div>
-                        <img src="./images/deal-zabo.png" alt="">
-                        <h2>25% Off | Jabo Plant</h2>
+                </div>
+                <div class="flex">
+                    <img class="relative w-[773px] h-[424px]" src="./images/deal-zabo.png" alt="">
+                    <div class="absolute text-white font-bold flex flex-col ">
+                        <h2 class="justify-center items-center text-center border">25% Off | Jabo Plant</h2>
                         <button class="underline">Shop Now</button>
                     </div>
                 </div>
+
 
             </div>
 
         </div>
 
+
+        <!-- Bunch  -->
+
+        <div class="box-sizing ">
+
+            <!-- <img class="" src="./images/news-letter-bg.png" alt="" /> -->
+
+            <div class="box-content ">
+                <h2 class="text-5xl noto-serif-font font-bold text-center text-white pb-6 ">Join
+                    the colorful Bunch</h2>
+                <input type="text" class=" bg-white p-2 mr-0 w-[644px] h-[50px] " placeholder="write email">
+                <input type="button" value="Subscribe"
+                    class="p-2 ml-0 font-bold text-white bg-[#E95A08] w-[186px] h-[50px]">
+            </div>
+        </div>
     </main>
+
+
+
     <footer class="grid grid-cols-4 pt-12 pb-12 w-[1120px] h-[248px] m-auto">
         <div>
             <img src="./images/leaf.png" class="w-[75px] h-[75px]" alt="">
