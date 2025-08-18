@@ -1,0 +1,51 @@
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.box-sizing {
+  /* width: 1450px; */
+  height: 533px;
+  display: grid;
+  place-content: center;
+  background-image: url(./images/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box-content {
+  text-align: center;
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .home {
+    display: none;
+  }
+  .shop {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .badge {
+    display: none;
+  }
+  .flowerLover img {
+    position: unset;
+  }
+}
